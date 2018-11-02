@@ -7,7 +7,7 @@
     Exercise 02.08.01
     
     Author: Abraham Aguilar
-    Date: 10.03.18
+    Date: 10.30.18
     
     MySQLInfo.php
     
@@ -28,7 +28,7 @@
     $password = "hurry-leave-06";
     $DBConnect = mysqli_connect($hostName, $userName, $password);
     
-    if (!$DBConnect) {
+    if (!$DBConnect) { // inform if the database was able to be connected to.
         echo "<p>Connection failed.</p>\n";
     } else {
         echo "<p>Connection successful.</p>\n";
