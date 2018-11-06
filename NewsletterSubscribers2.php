@@ -7,21 +7,21 @@
     Exercise 02.08.01
     
     Author: Abraham Aguilar
-    Date: 11.02.18
+    Date: 11.05.18
     
-    NewsletterSubscribers.php
+    NewsletterSubscribers2.php
     
 -->
 
 <head>
-    <title>Newsletter Subscribers</title>
+    <title>Newsletter Subscribers 2</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
     <script src="modernizr.custom.65897.js"></script>
 </head>
 
 <body>
-    <h2>Newsletter Subscribers</h2>
+    <h2>Newsletter Subscribers 2</h2>
     <?php
     $hostName = "localhost";
     $userName = "adminer";
@@ -47,13 +47,11 @@
             echo "<th>Subscribe Date</th>";
             echo "<th>Confirm Date</th>";
             echo "</tr>\n";
-            while ($row = mysqli_fetch_row($results)) { // displays the data as long as there is data
+            while ($row = mysqli_fetch_assoc($results)) { // displays the data as long as there is data, this time using associative arrays.
                 echo "<tr>";
-                echo "<td>{$row[0]}</td>";
-                echo "<td>{$row[1]}</td>";
-                echo "<td>{$row[2]}</td>";
-                echo "<td>{$row[3]}</td>";
-                echo "<td>{$row[4]}</td>";
+                foreach ($row as $field) {
+                    echo "<td>{$field}</td>";   
+                }
                 echo "</tr>\n";
             }
             echo "</table>\n";
