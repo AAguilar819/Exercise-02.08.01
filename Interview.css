@@ -1,0 +1,53 @@
+body {
+    background-color: azure;
+}
+
+form {
+    width: 30%;
+    min-width: 400px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+fieldset {
+    border: 0px solid white;
+    border-left: 1px solid blue;
+}
+
+section#left {
+    float: left;
+    display: inline-block;
+    width: 50%;
+}
+
+section#right {
+    float: right;
+    display: inline-block;
+    width: 50%;
+}
+
+input,
+textarea {
+    background-color: aliceblue;
+}
+
+table {
+    background-color: aliceblue;
+    color: darkblue;
+}
+
+td {
+    min-width: 5%;
+}
+
+a {
+    /*Button Stylization for links*/
+    background-color: aliceblue;
+    color: #0c0000;
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    font-family: arial;
+    font-size: 8pt;
+    text-decoration: none;
+    padding: 3px 5px;
+}

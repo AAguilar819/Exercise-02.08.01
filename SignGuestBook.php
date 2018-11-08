@@ -4,7 +4,7 @@
 
 <!--
     
-    Exercise 02.08.01
+    Project 02.08.01
     
     Author: Abraham Aguilar
     Date: 11.05.18
